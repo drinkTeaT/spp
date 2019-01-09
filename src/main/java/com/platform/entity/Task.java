@@ -28,12 +28,12 @@ public class Task {
 
     //截止时间
     @Column(name = "task_endtime", nullable = true, length = 32)
-    private Date endtime;
+    private Date endTime;
 
     //任务接手人
     @ManyToOne
-    @JoinColumn(name = "user_touser")
-    private User touser;
+    @JoinColumn(name = "user_id")
+    private User toUserId;
 
 
 
